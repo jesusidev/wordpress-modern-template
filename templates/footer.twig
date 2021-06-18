@@ -1,0 +1,66 @@
+<div class="container px-5 py-8 mx-auto flex justify-center items-center sm:flex-row flex-col border-t-2 border-gray-200">
+    <a href="{{site.link}}" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <img class="w-16" src="{{custom_logo_url}}" alt="{{site.name}}" />
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© {{"now"|date('Y')}} Student game Plan
+    </p>
+  </div>
+
+<script type="text/javascript">
+async function postData(url = "", data = {}) {
+  const response = await fetch(url, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      "WIS-ApiKey": "wisbeta"
+    },
+    referrerPolicy: "no-referrer"
+  });
+  return response.json();
+}
+
+var wpcf7Elm = document.querySelector(".wpcf7");
+
+wpcf7Elm.addEventListener(
+  "wpcf7submit",
+  function (event) {
+    if ("27" == event.detail.contactFormId) {
+      var inputs = event.detail.inputs;
+      for (var i = 0; i < inputs.length; i++) {
+        if ("your-email" === inputs[i].name) {
+          var seperate = window.location.pathname.split("/");
+          var seperateEmail = inputs[i].value.split("@");
+          var school = seperate[1];
+          var studentEmail = seperateEmail[1];
+          postData(
+            `https://api.workinsports.com/v2/webhooks/sgp?urlname=${school}`
+          ).then((data) => {
+            var message = document.querySelector(".wpcf7-response-output");
+            message.innerHTML = `Validating ${inputs[i].value}...`;
+            if (data.value) {
+              var redirectLink = data.value[0].urlredirect;
+              for (let i = 0; i < data.value[0].mxdomain_array.length; i++) {
+                if (data.value[0].mxdomain_array[i] === studentEmail) {
+                  location.replace(redirectLink);
+                  message.innerHTML =
+                    "Thank you! You will be redirected shortly...";
+                } else {
+                  setTimeout(() => {
+                    message.innerHTML = "Sorry, your email was not found.";
+                  }, 5000);
+                }
+              }
+            } else {
+              console.log("FALSE");
+              var message = document.querySelector(".wpcf7-response-output");
+              message.innerHTML = "Sorry, your school is not available";
+            }
+          });
+          break;
+        }
+      }
+    }
+  },
+  false
+);
+</script>

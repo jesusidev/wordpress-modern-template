@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["utils/greeting.ts", "components/just-talk/justTalk.ts", "main.ts"],
+  "sourcesContent": ["const myDate = new Date();\r\nconst hrs = myDate.getHours();\r\n\r\nexport default function greeting(): string {\r\n  if (hrs < 12) {\r\n    return 'Good Morning';\r\n  }\r\n  if (hrs >= 12 && hrs < 17) {\r\n    return 'Good Afternoon';\r\n  }\r\n  if (hrs >= 17) {\r\n    return 'Good Evening';\r\n  }\r\n  return 'Could not get your time, try again later';\r\n};\r\n", "import {greeting} from '../../utils';\r\n\r\nexport default function justTalk() {\r\n\r\n\talert(greeting());\r\n\r\n}", "import {justTalk} from './components';\r\n\r\ndocument.addEventListener('DOMContentLoaded', function() {\r\n  justTalk();\r\n});"],
+  "mappings": "MAAA,GAAM,GAAS,GAAI,MACb,EAAM,EAAO,WAEJ,YAA4B,CACzC,MAAI,GAAM,GACD,eAEL,GAAO,IAAM,EAAM,GACd,iBAEL,GAAO,GACF,eAEF,2CCXM,YAAoB,CAElC,MAAM,KCFP,SAAS,iBAAiB,mBAAoB,UAAW,CACvD",
+  "names": []
+}

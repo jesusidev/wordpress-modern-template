@@ -1,0 +1,479 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <div class="content-wrapper">
+        <article class="post-type-{{ post.title }}" id="post-{{ post.ID }}">
+            <section class="text-white bg-gradient-to-b from-red-900 to-red-500">
+                <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                        <h1 class="title-font lg:text-4xl text-3xl mb-4 font-medium text-white">Improve Your Students
+                            Chances Of Finding
+                            Employment</h1>
+                        <p class="mb-8 leading-relaxed">Our online platform teaches students how to develop a
+                            career-seeking strategy that will help them stand out. They’ll learn actionable techniques
+                            that will guide them through the art of getting hired.</p>
+                    </div>
+                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                        <img class="object-cover object-center rounded" alt="hero"
+                             src="https://studentgameplan.com/wp-content/uploads/2020/05/hero_main-1.png">
+                    </div>
+                </div>
+            </section>
+            <section class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+                    <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+                        The Student Game Plan Includes Four Modules
+                    </h2>
+                </div>
+                <div class="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="flex flex-col justify-between p-5">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full">
+                                <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg"
+                                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M14 10h4
+                                    .764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"/>
+                                </svg>
+                            </div>
+                            <h6 class="mb-2 font-semibold leading-5">Gaining the RIGHT Experience</h6>
+                            <p class="mb-3 text-sm text-gray-900">Students will learn what skills are needed for
+                                their industry, and how to make a plan to acquire the right knowledge.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between p-5">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full">
+                                <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                     width="32"
+                                     height="32">
+                                    <title>ionicons-v5-j</title>
+                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                                          d="M402,168c-2.93,40.67-33.1,72-66,72s-63.12-31.32-66-72c-3-42.31,26.37-72,66-72S405,126.46,402,168Z"
+                                          stroke="#000"/>
+                                    <path fill="none" stroke-miterlimit="10" stroke-width="32"
+                                          d="M336,304c-65.17,0-127.84,32.37-143.54,95.41-2.08,8.34,3.15,16.59,11.72,16.59H467.83c8.57,0,13.77-8.25,11.72-16.59C463.85,335.36,401.18,304,336,304Z"
+                                          stroke="#000"/>
+                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                                          d="M200,185.94C197.66,218.42,173.28,244,147,244S96.3,218.43,94,185.94C91.61,152.15,115.34,128,147,128S202.39,152.77,200,185.94Z"
+                                          stroke="#000"/>
+                                    <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+                                          d="M206,306c-18.05-8.27-37.93-11.45-59-11.45-52,0-102.1,25.85-114.65,76.2C30.7,377.41,34.88,384,41.72,384H154"
+                                          stroke="#000"/>
+                                </svg>
+                            </div>
+                            <h6 class="mb-2 font-semibold leading-5">Building Your Network</h6>
+                            <p class="mb-3 text-sm text-gray-900">The combination of the experience and connections
+                                will help students grab attention. They'll learn how to build a network from scratch.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between p-5">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full">
+                                <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                     fill="#000" width="32"
+                                     height="32">
+                                    <title>document</title>
+                                    <path d="M25.7,9.3l-7-7C18.5,2.1,18.3,2,18,2H8C6.9,2,6,2.9,6,4v24c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V10C26,9.7,25.9,9.5,25.7,9.3z M18,4.4l5.6,5.6H18V4.4z M24,28H8V4h8v6c0,1.1,0.9,2,2,2h6V28z"/>
+                                    <rect width="12" height="2" x="10" y="22"/>
+                                    <rect width="12" height="2" x="10" y="16"/>
+                                    <rect width="32" height="32" fill="none"/>
+                                </svg>
+                            </div>
+                            <h6 class="mb-2 font-semibold leading-5">Your Resume, Cover Letter and Your Personal
+                                Brand</h6>
+                            <p class="mb-3 text-sm text-gray-900">Their professional portfolio is what will
+                                represent them in their industry, we'll teach them how to put their best foot
+                                forward.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between p-5">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full">
+                                <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                     fill="#000" width="32"
+                                     height="32">
+                                    <title>user speaker</title>
+                                    <path d="M29.4146,19,27.7,17.2852A2.97,2.97,0,0,0,28,16a3,3,0,1,0-3,3,2.97,2.97,0,0,0,1.2864-.3L28,20.4141V28H22V25a7.0078,7.0078,0,0,0-7-7H9a7.008,7.008,0,0,0-7,7v5H30V20.4141A1.988,1.988,0,0,0,29.4146,19ZM4,25a5.006,5.006,0,0,1,5-5h6a5.0059,5.0059,0,0,1,5,5v3H4Z"/>
+                                    <path d="M12,4A5,5,0,1,1,7,9a5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,12,2Z"/>
+                                    <rect width="32" height="32" fill="none" data-name="&lt;Transparent Rectangle>"/>
+                                </svg>
+                            </div>
+                            <h6 class="mb-2 font-semibold leading-5">Interviewing for Jobs and Internships</h6>
+                            <p class="mb-3 text-sm text-gray-900">Without an approach to interviewing, nothing else
+                                matters. This is the module we help them get across the finish line.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                <div class="grid gap-5 row-gap-10 lg:grid-cols-2">
+                    <div class="flex flex-col justify-center">
+                        <div class="max-w-xl mb-6">
+                            <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                                Setting Students Up For Success
+                            </h2>
+                        </div>
+                        <p class="mb-4 text-sm font-bold tracking-widest uppercase">Your students will gain access
+                            to:</p>
+                        <div class="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
+                            <ul class="space-y-3">
+                                <li class="flex">
+                                    <span class="mr-1">
+                                      <svg class="w-5 h-5 mt-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                           viewBox="0 0 24 24"
+                                           stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                      </svg>
+                                    </span>
+                                    120+ pages of actionable career advice organized into four modules
+                                </li>
+                                <li class="flex">
+                                    <span class="mr-1">
+                                      <svg class="w-5 h-5 mt-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                           viewBox="0 0 24 24"
+                                           stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                      </svg>
+                                    </span>
+                                    25+ exclusive video sessions
+                                </li>
+                                <li class="flex">
+                                    <span class="mr-1">
+                                      <svg class="w-5 h-5 mt-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                           viewBox="0 0 24 24"
+                                           stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                      </svg>
+                                    </span>
+                                    10 downloadable worksheets
+                                </li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li class="flex">
+                                    <span class="mr-1">
+                                      <svg class="w-5 h-5 mt-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                           viewBox="0 0 24 24"
+                                           stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                      </svg>
+                                    </span>
+                                    checklists and cheat sheets
+                                </li>
+                                <li class="flex">
+                                    <span class="mr-1">
+                                      <svg class="w-5 h-5 mt-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                           viewBox="0 0 24 24"
+                                           stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                      </svg>
+                                    </span>
+                                    20 Spot Check assignments to keep them on track
+                                </li>
+                                <li class="flex">
+                                    <span class="mr-1">
+                                      <svg class="w-5 h-5 mt-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                           viewBox="0 0 24 24"
+                                           stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                      </svg>
+                                    </span>
+                                    Audio content and interviews with hiring experts
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="mt-8 text-sm font-bold uppercase">The Student Game Plan is
+                            comprehensive!</p>
+                        <p>As students progress through the course they’ll feel their confidence grow
+                            and learn how to let their abilities shine through.</p>
+                    </div>
+                    <div>
+                        <img class="w-full"
+                             src="https://studentgameplan.com/wp-content/uploads/2021/04/hero_sheets-1-923x1024-1.png?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                             alt=""/>
+                    </div>
+                </div>
+            </section>
+            <section class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                <div class="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
+                    <div class="relative lg:w-1/2">
+                        <img src="https://studentgameplan.com/wp-content/uploads/2021/04/hero_brianclapp-800x1000-1.png?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                             alt="" class="object-cover w-full lg:absolute h-80 lg:h-full"/>
+                    </div>
+                    <div class="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
+                        <h3 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
+                            About Us
+                        </h3>
+                        <p class="mb-5 text-gray-800">
+                            Brian Clapp has worked for over 25 years in the sports industry, beginning at CNN/Sports
+                            Illustrated as a Production Assistant in 1996. After working his way up to Producer, Brian
+                            branched out to Fox Sports Northwest where he was named Coordinating Producer of the
+                            Northwest Sports Report and other ancillary programs. The Boston native was promoted to News
+                            Director of Fox Sports Northwest after his first year in Seattle, where he was in charge of
+                            a multi-million dollar production budget, hiring and managing staff, journalistic
+                            decision-making and partnerships with the Seattle Mariners, Seahawks, Sonics and Sounders,
+                            and collegiate partners including the University of Washington and Washington State
+                            University.
+                        </p>
+                        <p class="mb-5 text-gray-800">
+                            After his time at Fox Sports Northwest, Brian joined the team at WorkInSports.com as VP of
+                            Content and Engaged Learning, sharing career advice and hosting the award-winning
+                            WorkInSports podcast where he has interviewed hundreds of executives responsible for hiring
+                            and managing staff.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                <div class="mx-auto mb-10 lg:max-w-xl sm:text-center">
+                    <h3 class="mb-6 text-3xl font-extrabold leading-none sm:text-4xl text-center">
+                        What people are saying
+                    </h3>
+                </div>
+                <div class="grid gap-10 mx-auto lg:grid-cols-2 lg:max-w-screen-lg">
+                    <div class="grid sm:grid-cols-3">
+                        <div class="relative w-full h-48 max-h-full sm:h-auto">
+                            <svg class="absolute object-cover w-full h-full rounded" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 512 512" width="32" height="32">
+                                <title>Person Icon</title>
+                                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                                      d="M344,144c-3.92,52.87-44,96-88,96s-84.15-43.12-88-96c-4-55,35-96,88-96S348,90,344,144Z"
+                                      stroke="#000"/>
+                                <path fill="none" stroke-miterlimit="10" stroke-width="32"
+                                      d="M256,304c-87,0-175.3,48-191.64,138.6C62.39,453.52,68.57,464,80,464H432c11.44,0,17.62-10.48,15.65-21.4C431.3,352,343,304,256,304Z"
+                                      stroke="#000"/>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
+                            <p class="text-lg font-bold">Robert Peterson</p>
+                            <p class="mb-4 text-xs text-gray-800">SEO Manager</p>
+                            <p class="mb-4 text-sm tracking-wide text-gray-800">
+                                “I’m living proof that Brian’s advice works! I took his advice prior to applying for
+                                jobs, interviewing, and starting my internship, and its worked every time”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid sm:grid-cols-3">
+                        <div class="relative w-full h-48 max-h-full sm:h-auto">
+                            <svg class="absolute object-cover w-full h-full rounded" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 512 512" width="32" height="32">
+                                <title>Person Icon</title>
+                                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                                      d="M344,144c-3.92,52.87-44,96-88,96s-84.15-43.12-88-96c-4-55,35-96,88-96S348,90,344,144Z"
+                                      stroke="#000"/>
+                                <path fill="none" stroke-miterlimit="10" stroke-width="32"
+                                      d="M256,304c-87,0-175.3,48-191.64,138.6C62.39,453.52,68.57,464,80,464H432c11.44,0,17.62-10.48,15.65-21.4C431.3,352,343,304,256,304Z"
+                                      stroke="#000"/>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
+                            <p class="text-lg font-bold">Ed Olsen, CEO Line Drive Sports and Marketing</p>
+                            <p class="mb-4 text-xs text-gray-800">Adjunct Professor Arizona State University</p>
+                            <p class="mb-4 text-sm tracking-wide text-gray-800">
+                                "I’ve had Brian speak in my class at Arizona State University the last two semesters and
+                                I can’t stress this enough, the information he shares is life changing for my students.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                <div class="grid gap-5 row-gap-10 lg:grid-cols-2">
+                    <div class="flex flex-col justify-center">
+                        <div class="max-w-xl mb-6">
+                            <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                                A Learning Platform for Everyone
+                            </h2>
+                        </div>
+                        <p class="mb-4 text-sm font-bold tracking-widest uppercase">We recognize that students absorb
+                            information differently, which is why our course content consists of written articles, audio
+                            files, videos, and worksheets.</p>
+                        <div class="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
+                            <ul class="space-y-3">
+                                <li class="flex">
+                                    <span class="mr-1">
+                                      <svg class="w-5 h-5 mt-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                           viewBox="0 0 24 24"
+                                           stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                      </svg>
+                                    </span>
+                                    Our exclusive videos are hosted by course mentor Brian Clapp and provide a deeper
+                                    look into the subject matter, utilizing case studies and first-hand stories to make
+                                    the content come to life.
+                                </li>
+                                <li class="flex">
+                                    <span class="mr-1">
+                                      <svg class="w-5 h-5 mt-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                           viewBox="0 0 24 24"
+                                           stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                      </svg>
+                                    </span>
+                                    Audio files are hand-selected interviews with talent acquisition experts.
+                                </li>
+                                <li class="flex">
+                                    <span class="mr-1">
+                                      <svg class="w-5 h-5 mt-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                           viewBox="0 0 24 24"
+                                           stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                      </svg>
+                                    </span>
+                                    Our articles are not like a textbook. There isn’t any dry content that is hard to
+                                    get through, everything is written to be actionable and energized.
+                                </li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li class="flex">
+                                    <span class="mr-1">
+                                      <svg class="w-5 h-5 mt-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                           viewBox="0 0 24 24"
+                                           stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                      </svg>
+                                    </span>
+                                    Quiz yourself. At the end of each lecture, take a Spot Check! quiz to test the
+                                    student’s understanding of the content.
+                                </li>
+                                <li class="flex">
+                                    <span class="mr-1">
+                                      <svg class="w-5 h-5 mt-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                           viewBox="0 0 24 24"
+                                           stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                      </svg>
+                                    </span>
+                                    Our downloadable worksheets and checklists will keep students on track and provide a
+                                    reference point to always refer back to.
+                                </li>
+                                <li class="flex">
+                                    <span class="mr-1">
+                                      <svg class="w-5 h-5 mt-px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                           viewBox="0 0 24 24"
+                                           stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                      </svg>
+                                    </span>
+                                    Access 24/7 at home, work, or on the go! View the course materials on your desktop,
+                                    tablet, and phone.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full"
+                             src="https://studentgameplan.com/wp-content/uploads/2021/04/hero_students-1-800x600-1.png?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                             alt=""/>
+                    </div>
+                </div>
+            </section>
+            <section class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+                    <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+                          <span class="relative inline-block">
+                            <svg viewBox="0 0 52 24" fill="red-500" class="fill-current text-red-500 absolute top-0
+                            left-0
+                            z-0 hidden w-32 -mt-8
+                            -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                              <defs>
+                                <pattern id="9a29985a-fc16-419b-ae53-1670f5ca4491" x="0" y="0" width=".135"
+                                         height=".30">
+                                  <circle cx="1" cy="1" r=".7"></circle>
+                                </pattern>
+                              </defs>
+                              <rect fill="url(#9a29985a-fc16-419b-ae53-1670f5ca4491)" width="52" height="24"></rect>
+                            </svg>
+                            <span class="relative">Need</span>
+                          </span>
+                        Help? Say Hello
+                    </h2>
+                    <p class="text-base text-gray-700 md:text-lg">
+                        Got a Question? We'd love to hear from you. Send us a message and we will respond you as soon as
+                        possible
+                    </p>
+                    <div>{{ post.contact_form_shortcode|shortcodes }}</div>
+                </div>
+            </section>
+        </article>
+    </div><!-- /content-wrapper -->
+
+    <!-- Contact-Form -->
+{#    <div class="w-full max-w-lg mx-auto">#}
+{#        <div class="flex flex-wrap -mx-3 mb-6">#}
+{#            <div class="w-full px-3">#}
+{#                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">#}
+{#                    Name#}
+{#                </label>#}
+{#                [text* your-name class:appearance-none class:block class:w-full class:bg-gray-200 class:text-gray-700#}
+{#                class:border class:rounded class:py-3 class:px-4 class:mb-3 class:leading-tight#}
+{#                class:focus:outline-none class:focus:bg-white]#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="flex flex-wrap -mx-3 mb-6">#}
+{#            <div class="w-full px-3">#}
+{#                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">#}
+{#                    E-mail#}
+{#                </label>#}
+{#                [email* your-email class:appearance-none class:block class:w-full class:bg-gray-200 class:text-gray-700#}
+{#                class:border class:rounded class:py-3 class:px-4 class:mb-3 class:leading-tight#}
+{#                class:focus:outline-none class:focus:bg-white]#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="flex flex-wrap -mx-3 mb-6">#}
+{#            <div class="w-full px-3">#}
+{#                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">#}
+{#                    Message#}
+{#                </label>#}
+{#                [textarea your-message class:no-resize class:appearance-none class:block class:w-full class:bg-gray-200#}
+{#                class:text-gray-700 class:border class:border-gray-200 class:rounded class:py-3 class:px-4 class:mb-3#}
+{#                class:leading-tight class:focus:outline-none class:focus:bg-white class:focus:border-gray-500#}
+{#                class:h-48 class:resize-none ]#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="md:flex md:items-center">#}
+{#            <div class="md:w-1/3">#}
+{#                <button type="submit" class="bg-green-400 text-white rounded-md font-semibold px-8 py-4#}
+{#                hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-50#}
+{#                wpcf7-form-control wpcf7-submit">Send</button>#}
+{#            </div>#}
+{#            <div class="md:w-2/3"></div>#}
+{#        </div>#}
+{#    </div>#}
+{% endblock %}
